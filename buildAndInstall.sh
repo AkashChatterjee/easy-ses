@@ -20,7 +20,7 @@ echo "Details of user ${USR}"
 id $USR
 
 cd build/libs/ || exit
-pattern="vms-*.jar"
+pattern="easy-*.jar"
 files=($pattern)
 jar_file=${files[0]}
 echo "Jar File : ${jar_file}"
@@ -53,7 +53,7 @@ echo "Creating ${WORKING_DIR}"
 sudo mkdir -p $WORKING_DIR
 
 echo "Removing old jars"
-sudo rm ${WORKING_DIR}/vms-*.jar
+sudo rm ${WORKING_DIR}/easy-*.jar
 
 echo "Copying jar ${jar_file} to ${WORKING_DIR}"
 sudo cp "build/libs/${jar_file}" ${WORKING_DIR}/
