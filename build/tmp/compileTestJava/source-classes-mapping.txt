@@ -1,0 +1,2 @@
+com/easyses/email/EmailApplicationTests.java
+ com.easyses.email.EmailApplicationTests
