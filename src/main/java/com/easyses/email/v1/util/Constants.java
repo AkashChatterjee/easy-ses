@@ -13,5 +13,5 @@ public class Constants {
     public static final String PROP_FOOTER_MESSAGE = "footerMessage";
 
     //Email templates folder
-    public static final String HTML_TEMPLATES_FOLDER = "html-templates/";
+    public static final String HTML_TEMPLATES_FOLDER = "html-mail-templates/";
 }
