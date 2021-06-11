@@ -1,6 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '2.5.1'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
 	id "io.freefair.lombok" version "5.3.0"
 	id 'application'
@@ -20,7 +20,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	// https://mvnrepository.com/artifact/org.springframework/spring-web
-	implementation group: 'org.springframework', name: 'spring-web', version: '5.3.8'
+	implementation group: 'org.springframework', name: 'spring-web', version: '5.2.9.RELEASE'
 
 	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-ses
 	implementation group: 'com.amazonaws', name: 'aws-java-sdk-ses', version: '1.11.916'
@@ -29,8 +29,10 @@ dependencies {
 	implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
 
 	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
-	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'
+	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.0'
 
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.4.RELEASE'
 }
 
 test {
