@@ -28,7 +28,7 @@ curl --location --request POST 'http://<HOST>:8080/v1/send-mails' \
 
 ### Sample Email ###
 
-<img width="589" alt="Screenshot 2021-06-12 at 1 34 31 AM" src="https://user-images.githubusercontent.com/8582657/121743078-617d6f80-cb1e-11eb-8906-b0d27ccee7ba.png">
+<img width="579" alt="Screenshot 2021-06-12 at 1 42 04 AM" src="https://user-images.githubusercontent.com/8582657/121743737-6c84cf80-cb1f-11eb-914c-ab79584ab64e.png">
 
 ### Who do I talk to? ###
 
