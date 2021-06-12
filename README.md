@@ -20,6 +20,23 @@ You shall need one of these two:
 * Run 'sudo ./buildAndInstall.sh &lt;name of deployment profile&gt;. E.g. 'sudo ./buildAndInstall.sh dev'. This builds the project and configures the microservice as a systemd service. Please create proper profiles for production when required.
 * Run 'sudo systemctl start msvc-easy-ses' to start the microservice on port 8080.
 
+### How does the API flow work? ###
+
+* The API request body consists of the following details:
+    - emailList: Array of email IDs of the recipients
+    - subject: Subject of the email
+    - mainMessage: Main body of the email (can include HTML formatting)
+    - ctaButtonLabel: The label for the Call to Action button in the mail body
+    - ctaButtonLink: The link for the Call to Action button
+    - footerMessage: Footer text
+   
+* Once the request is received, the Controller extracts the information from the request body and calls the asynchronous method (sendMailsAsync) in the Service layer
+
+* In the Service layer:
+    - The recipient list is broken down into chunks of 50 emails (due to the AWS SES limit per AWS SES API call)
+    - The placeholders in the mail HTML body is replaced by the details provided in the API request
+    - A call is made to the AWS SES API to send the emails
+
 ### Sample cURL ###
 
 curl --location --request POST 'http://HOST:8080/v1/send-mails' \
