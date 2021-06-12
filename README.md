@@ -15,7 +15,7 @@ A simple controller-service combination that enables a user to quickly start sen
 
 ### Sample cURL ###
 
-curl --location --request POST 'http://<HOST>:8080/v1/send-mails' \
+curl --location --request POST 'http://HOST:8080/v1/send-mails' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "emailList":["<EMAIL1>", "<EMAIL2>"],
