@@ -4,6 +4,13 @@
 
 A simple controller-service combination that enables a user to quickly start sending dynamic HTML emails via AWS SES.
 
+### Prerequisites ###
+
+* An AWS account where you've already gotten approval from AWS to use the SES service OUTSIDE the sandbox
+OR
+* An AWS account where the SES service is INSIDE the sandbox (default) and the emails you want to send to are verified
+
+
 ### How do I get set up? ###
 
 * Clone the repository to a remote EC2 instance.
