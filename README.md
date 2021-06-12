@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-A simple controller-service combination that enables a user to quickly start sending dynamic HTML emails via AWS SES.
+A microservice that provides a simple REST API endpoint to send dynamic HTML emails via AWS SES (asynchronously).
 
 ### Prerequisites ###
 
