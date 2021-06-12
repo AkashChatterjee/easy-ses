@@ -18,7 +18,7 @@ A simple controller-service combination that enables a user to quickly start sen
 curl --location --request POST 'http://HOST:8080/v1/send-mails' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "emailList":["<EMAIL1>", "<EMAIL2>"],
+    "emailList":["EMAIL1", "EMAIL2"],
     "subject":"Test",
     "mainMessage":"Test",
     "ctaButtonLabel":"Test",
